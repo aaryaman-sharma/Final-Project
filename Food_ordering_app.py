@@ -1,6 +1,6 @@
 
 import re
-class Foodorder:
+class Foodordering:
     users = []
         
     def __init__(self):
@@ -85,8 +85,8 @@ class Foodorder:
                     password = input('Enter your Password:')
                 details = [Full_name,Number,Address,Email,password]
                 print(details)
-                Foodorder.users.append(details)
-            self.user_details = Foodorder.users
+                Foodordering.users.append(details)
+            self.user_details = Foodordering.users
             if self.user_details:
                 return True
             return False
@@ -181,8 +181,8 @@ class Foodorder:
         
     def update(self):
         print('Your Profile'.center(100,'-'))
-        print(Foodorder.users)
-        for i in Foodorder.users:
+        print(Foodordering.users)
+        for i in Foodordering.users:
             del i[0:3]
            
             Full_name = input("Enter your name:")
@@ -218,6 +218,6 @@ class Foodorder:
             
         
         
-obj = Foodorder()
+obj = Foodordering()
 obj.menu()
 
